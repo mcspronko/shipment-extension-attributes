@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+    <table name="magemastery_shipment_attributes" resource="default" engine="innodb" comment="Shipment Attributes Table">
+        <column xsi:type="int" name="entity_id" padding="10" unsigned="true" nullable="false" identity="true" comment="Entity ID"/>
+        <column xsi:type="int" name="shipment_id" padding="10" unsigned="true" nullable="false" identity="false" comment="Shipment ID"/>
+        <column xsi:type="varchar" name="carrier" nullable="false" length="255" comment="Carrier"/>
+        <column xsi:type="float" name="cost" unsigned="false" nullable="true" comment="Cost"/>
+        <column xsi:type="varchar" name="delivery_date" nullable="true" length="255" comment="Delivery Date"/>
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="entity_id"/>
+        </constraint>
+        <constraint xsi:type="foreign" referenceId="MAGEMASTERY_SHIPMENT_ATTRS_SHIPMENT_ID_SALES_SHIPMENT_ENTT_ID"
+                    table="magemastery_shipment_attributes" column="shipment_id" referenceTable="sales_shipment"
+                    referenceColumn="entity_id" onDelete="CASCADE"/>
+    </table>
+</schema>

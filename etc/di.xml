@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="MageMastery\ShipmentAttributes\Api\ManagementInterface"
+                type="MageMastery\ShipmentAttributes\Service\Management"/>
+    <type name="Magento\Sales\Api\ShipmentRepositoryInterface">
+        <plugin name="MageMastery\ShipmentAttributes\Plugin\ShipmentRepositoryPlugin"
+                type="MageMastery\ShipmentAttributes\Plugin\ShipmentRepositoryPlugin" />
+    </type>
+</config>

@@ -1,0 +1,28 @@
+{
+    "name": "magemastery/shipment-extension-attributes",
+    "description": "An example of the Magento 2 extension that adds Extension Attributes to a Shipment document.",
+    "authors": [
+        {
+            "name": "Max Pronko",
+            "email": "max.pronko@gmail.com",
+            "homepage": "https://github.com/mcspronko"
+        }
+    ],
+    "require": {
+        "magento/framework": "^102",
+        "magento/module-sales": "^102"
+    },
+    "type": "magento2-module",
+    "license": [
+        "OSL-3.0",
+        "AFL-3.0"
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "MageMastery\\ShipmentAttributes\\": ""
+        }
+    }
+}

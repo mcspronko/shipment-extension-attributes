@@ -1,0 +1,15 @@
+{
+    "magemastery_shipment_attributes": {
+        "column": {
+            "entity_id": true,
+            "shipment_id": true,
+            "carrier": true,
+            "cost": true,
+            "delivery_date": true
+        },
+        "constraint": {
+            "PRIMARY": true,
+            "MAGEMASTERY_SHIPMENT_ATTRS_SHIPMENT_ID_SALES_SHIPMENT_ENTT_ID": true
+        }
+    }
+}
