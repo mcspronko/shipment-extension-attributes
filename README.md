@@ -2,7 +2,7 @@
 
 An example of the Magento 2 extension that adds Extension Attributes to a Shipment document.
 
-Example response from the http://<domain-name>/rest/V1/shipment/1 endpoint:
+Example response from the http://domain-name/rest/V1/shipment/1 endpoint:
 
 ```json
 {
